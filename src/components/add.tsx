@@ -2,7 +2,8 @@ import { useContext, useEffect, useRef } from "react";
 import { AppContext } from "../app-context";
 
 const Add = () => {
-  const { addToDo } = useContext(AppContext);
+  const { addToDo, list } = useContext(AppContext);
+
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   const handleSubmit = (event: React.SyntheticEvent) => {

@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { AppContext } from "./app-context";
+import { AppContext } from "../app-context";
 
 const ListItem = ({ children, id }: Props) => {
-  const { deleteById } = useContext(AppContext);
+  const { deleteById, list } = useContext(AppContext);
 
   const onDelete = (event: React.MouseEvent<HTMLButtonElement>) => {
     deleteById(id);
-    console.log("Deleted");
   };
 
   return (
