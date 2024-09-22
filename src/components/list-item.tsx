@@ -11,7 +11,7 @@ const ListItem = ({ children, id }: Props) => {
   return (
     <>
       <li className="item">
-        <div>{children}</div>
+        <div className="content">{children}</div>
         <button onClick={onDelete}>Delete</button>
       </li>
     </>

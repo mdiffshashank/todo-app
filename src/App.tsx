@@ -43,7 +43,7 @@ function App() {
           {list?.map((item) => {
             return (
               <ListItem key={item.id} id={item.id}>
-                {item.task}
+                <p>{item.task}</p>
               </ListItem>
             );
           })}

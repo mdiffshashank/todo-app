@@ -23,6 +23,7 @@ const Add = () => {
         ref={inputRef}
         name="new-task"
         placeholder="Enter new task"
+        required
       />
       <button>Add</button>
     </form>

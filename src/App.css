@@ -1,3 +1,10 @@
+:root{
+    --text-color: #fff;
+    --bg-color:#0f2862;
+    --primary:#091f36;
+    --border:#9e363a;
+}
+
 *,::after,::before{
     box-sizing: border-box;
     margin:0;
@@ -6,33 +13,35 @@
 h3{
     margin-bottom: 5rem;
 }
+
 body{
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:var(--bg-color);
+    color: var(--text-color);
+    mix-blend-mode:luminosity
 }
 
 .app{
-    margin:20px auto;
-    width:400px;
+    margin:2rem auto;
+    width:50rem;
+    max-width:80%;
     text-align: center;
 }
 
 input{
     padding:15px;
-    width:15rem;
+    width:60%;
     margin:0 10px 0 0;
-    outline-color: black;
+    border: none;
 }
+
 
 button{
     padding:15px 30px;
-    background-color: black;
-    color: white;
     border:none;
-}
-button:hover{
-    color:black;
-    background-color: #ddd;
+    display: block;
+    min-width: 7rem;
 }
 
 li{
@@ -51,3 +60,12 @@ li{
     align-items: center;
     margin-bottom: 20px;
 }
+.content{
+    padding:15px;
+    width:60%;
+    border: 1px solid var(--border);
+    background-color: #091f36;
+    margin:0 10px 0 0;
+    text-align: start;
+}
+
